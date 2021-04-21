@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/moeasakr/onroute.moeasakr.ca/
+    - /bin/cp -R * $DEPLOYPATH
