@@ -1,12 +1,14 @@
 <?php
-    use ONROUTE\models\{Database, User};
+    use OnRoute\models\{Database, User};
     require_once 'vendor/autoload.php';
-    require_once './library/functions.php';
-    require_once './Models/Mailer.php';
+    require_once 'library/functions.php';
+    require_once 'models/Mailer.php';
 
     //Add unqiue css files here
     $css = array('styles/login.css');
     require_once './views/header.php';
+    require_once 'models/Database.php';
+    require_once 'models/User.php';
 
 
     $dbcon = Database::getDB();

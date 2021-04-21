@@ -1,19 +1,22 @@
 <?php
     //=====hotel feature requirements=====//
-    use ONROUTE\models\{Database, Hotel};
+    use OnRoute\models\Database;
+    use OnRoute\models\Hotel;
     
     require_once './vendor/autoload.php';//doesen't work
-    require_once './library/functions.php';
+    require_once 'library/functions.php';
+    require_once './models/Hotel.php';
+    require_once './models/Database.php';//if autoload is working, we don't seem to need this
 
     //Add unqiue css files here
     $css = array('styles/accommodations.css');
     require_once('views/header.php');
     
     //test database conneciton
-    // $dbcon = Database::getDB();
+    $dbcon = Database::getDB();
     
-    // //get method
-    // $h = new Hotel();   
+    //get method
+    $h = new Hotel();   
     //=====hotel feature requirements=====//
 ?>
 
