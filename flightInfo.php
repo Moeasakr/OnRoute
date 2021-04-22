@@ -2,6 +2,8 @@
     require_once 'library/functions.php';
     $css = array("styles/flightTracking.css");
     require_once 'views/header.php';
+    require_once 'Models/Flight.php';
+    require_once 'Models/Database.php';
     //access session var 
     $flightInfo = $_SESSION['flightInfo'];
     $airlineLogoLink = $_SESSION['airlineLogoLink'];

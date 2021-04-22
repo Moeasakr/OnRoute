@@ -4,6 +4,8 @@
     require_once 'library/functions.php';
     $css = array('styles/flights.css'); //Add unqiue css files here
     require_once 'views/header.php';
+    require_once 'Models/Flight.php';
+    require_once 'Models/Database.php';
 
     //Initialize variables for toggling display information
     $errMsg = "";

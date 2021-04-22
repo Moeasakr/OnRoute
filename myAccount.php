@@ -4,6 +4,10 @@
     require_once 'library/functions.php';
     $css = array("styles/myAccount.css");
     require_once 'views/header.php';
+    require_once 'Models/Database.php';
+    require_once 'Models/Flight.php';
+    require_once 'Models/Hotel.php';
+    require_once 'Models/Vehicle.php';
 
     //Checks if user is logged in
     if (empty($_SESSION['userID'])) {

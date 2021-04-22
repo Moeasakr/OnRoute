@@ -5,8 +5,8 @@
     
     require_once './vendor/autoload.php';//doesen't work
     require_once 'library/functions.php';
-    require_once './models/Hotel.php';
-    require_once './models/Database.php';//if autoload is working, we don't seem to need this
+    require_once './Models/Hotel.php';
+    require_once './Models/Database.php';//if autoload is working, we don't seem to need this
 
     //Add unqiue css files here
     $css = array('styles/accommodations.css');

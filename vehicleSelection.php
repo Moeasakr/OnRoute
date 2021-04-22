@@ -6,6 +6,8 @@ require_once 'library/vehicles.php';
 //Styling and Header View
 $css = array('styles/vehicles.css');
 require_once 'views/header.php';
+require_once 'Models/Database.php';
+require_once 'Models/Vehicle.php';
 //variable. 
 $appear = 'style="display: block;';
 $disappear = 'style="display: none;"';

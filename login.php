@@ -1,14 +1,14 @@
 <?php
-    use OnRoute\models\{Database, User};
+    use ONROUTE\models\{Database, User};
     require_once 'vendor/autoload.php';
     require_once 'library/functions.php';
-    require_once 'models/Mailer.php';
+    require_once 'Models/Mailer.php';
 
     //Add unqiue css files here
     $css = array('styles/login.css');
     require_once './views/header.php';
-    require_once 'models/Database.php';
-    require_once 'models/User.php';
+    require_once 'Models/Database.php';
+    require_once 'Models/User.php';
 
 
     $dbcon = Database::getDB();
@@ -64,7 +64,7 @@
             $_SESSION['userFirstName'] = $u->firstname;
             $_SESSION['userLastName'] = $u->lastname;
             $_SESSION['userPhone'] = $u->phonenumber;
-            header('Location: Flights.php');
+            header('Location: flights.php');
         } else {
             //Change this to something useful
             $invalid = "<p>Invalid username and/or password</p>";

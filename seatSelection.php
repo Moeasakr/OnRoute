@@ -5,10 +5,10 @@
     use OnRoute\models\{Database,Flight, Meal, Plane};
     require_once 'vendor/autoload.php';
     require_once 'library/functions.php';
-    require_once 'models/flight.php';
-    require_once 'models/plane.php';
-    require_once 'models/meal.php';
-    require_once 'models/database.php';
+    require_once 'Models/Flight.php';
+    require_once 'Models/Plane.php';
+    require_once 'Models/Meal.php';
+    require_once 'Models/Database.php';
 
     $css = array("styles/seatSelection.css");
     require_once 'views/header.php';

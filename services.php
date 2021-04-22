@@ -1,6 +1,6 @@
 <?php
 require_once 'library/functions.php';
-require_once 'models/Mailer.php';
+require_once 'Models/Mailer.php';
 //Add unqiue css files here
 $css = array('styles/services.css');
 require_once 'views/header.php';

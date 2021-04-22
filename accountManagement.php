@@ -2,12 +2,14 @@
     use ONROUTE\models\{Database, User};
     require_once 'vendor/autoload.php';
     require_once 'library/functions.php';
-    require_once './Models/Mailer.php';
+    require_once 'Models/Mailer.php';
+    require_once 'Models/Database.php';
+    require_once 'Models/User.php';
 
     //Add unqiue css files here
     $css = array('styles/login.css');
     
-    require_once './views/header.php';
+    require_once 'views/header.php';
 
     //Redirects to home page if user is not logged in
     if (!$_SESSION['userID']) {

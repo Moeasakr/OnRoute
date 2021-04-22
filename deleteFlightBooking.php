@@ -4,7 +4,9 @@
     require_once 'library/functions.php';
     $css = array("styles/flightBooking.css");//Add unqiue css files here
     require_once 'views/header.php';
-
+    require_once 'Models/Flight.php';
+    require_once 'Models/Database.php';
+    
     //Checks if user is logged in
     if (empty($_SESSION['userID'])) {
         //Redirects to login page if user is not logged in
